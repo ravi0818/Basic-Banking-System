@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+h4 {
+  padding: 20px;
+}
+
+/* setting the text-align property to center*/
+th,
+td {
+  padding: 5px;
+  text-align: center;
+}
