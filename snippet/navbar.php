@@ -2,7 +2,7 @@
   <div class="row w-100">
     <div class="col-lg-4"><ul class="navbar-nav">
         <li class="nav-item pl-4">
-          <a class="navbar-brand" href="index.php">Bank Of Coding</a>
+          <a class="navbar-brand" href="index.php">Bank Of Spark</a>
         </li>
     </div>
     <div class="col-lg-8">
@@ -19,9 +19,9 @@
         <li class="nav-item">
           <a class="nav-link" href="transaction_history.php">Transaction History</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="snippet/datainsert.php">Data</a>
-        </li>
+        </li> -->
         <!-- <li class="nav-item">
           <a class="nav-link" href="snippet/datainsert.php">insert</a>
         </li> -->

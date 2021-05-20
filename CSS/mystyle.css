@@ -12,3 +12,28 @@ td {
   padding: 5px;
   text-align: center;
 }
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  /* width: 30px;  */
+  text-align: center;
+  /* text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; */
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-github {
+  background: rgb(255, 255, 255);
+  font-size: 48px;
+}

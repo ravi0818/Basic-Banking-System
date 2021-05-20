@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	if($from_name==$to_name) echo '<script>alert("Money cannot be transfer within same account!")</script>';
 
-	else if($tr_amount==0) echo '<script>alert("Amount should be greater than 0")</script>';
+	else if($tr_amount<=0) echo '<script>alert("Amount should be greater than 0")</script>';
 
 	else if($tr_amount>$sql1['balance']) echo '<script>alert("Insufficient balance!")</script>';
 
@@ -22,8 +22,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$sql.="INSERT INTO transaction_history_db (id, from_ac, to_ac, amount, datetime)
 		VALUES ('', '$from_name', '$to_name', $tr_amount, '$date')";
 		if ($conn->multi_query($sql) === TRUE) {
-			echo '<script>alert("Transfer Successful")</script>';
-			header("location:transaction_history.php");
+			echo '<script>alert("Transfer Successful");
+			window.location.href="transaction_history.php";
+			</script>';
+			// header("location:transaction_history.php");
 		} else {
 			echo "Error: " . $sql . "<br>" . $conn->error;
 		}
