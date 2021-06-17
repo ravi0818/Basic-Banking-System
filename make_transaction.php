@@ -103,6 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 								<button type="submit" class="btn btn-success">Transfer</button>
 							</div>
 						</div>
+					</div>
 				</form>
 			</div>
 		</div>
